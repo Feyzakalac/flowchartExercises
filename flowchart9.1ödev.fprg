@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alpar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-02 01:57:22 &#214;S"/>
+        <attribute name="created" value="YWxwYXI7QUxQLVBDOzIwMjMtMDMtMDI7MDE6NDA6MzAgw5ZTOzIzNDU="/>
+        <attribute name="edited" value="YWxwYXI7QUxQLVBDOzIwMjMtMDMtMDI7MDE6NTc6MjIgw5ZTOzE7MjQ2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, top, i" type="Integer" array="False" size=""/>
+            <assign variable="top" expression="0"/>
+            <output expression="&quot;&#304;lk say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;&#304;kinci say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="n2"/>
+            <for variable="i" start="n1" end="n2" direction="inc" step="1">
+                <assign variable="top" expression="top+i"/>
+            </for>
+            <output expression="&quot;Girdiniz iki say&#305; aras&#305;ndaki say&#305;lar&#305;n toplam&#305;:&quot;" newline="True"/>
+            <output expression="top" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

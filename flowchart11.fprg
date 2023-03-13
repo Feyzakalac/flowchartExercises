@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alpar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-02 10:13:25 &#214;S"/>
+        <attribute name="created" value="YWxwYXI7QUxQLVBDOzIwMjMtMDMtMDI7MDk6NDI6MzMgw5ZTOzIzNTg="/>
+        <attribute name="edited" value="YWxwYXI7QUxQLVBDOzIwMjMtMDMtMDI7MTA6MTM6MjUgw5ZTOzU7MjQ2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, i" type="Integer" array="False" size=""/>
+            <declare name="fakt&#246;riyel" type="Real" array="False" size=""/>
+            <output expression="&quot;Fakt&#246;riyelini hesaplamak istedi&#287;iniz say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="fakt&#246;riyel" expression="1"/>
+            <for variable="i" start="sayi" end="1" direction="dec" step="1">
+                <assign variable="fakt&#246;riyel" expression="fakt&#246;riyel*i"/>
+            </for>
+            <output expression="&quot;Sonu&#231;:&quot; &amp;fakt&#246;riyel" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

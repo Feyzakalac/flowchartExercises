@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alpar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-01 11:32:54 &#214;S"/>
+        <attribute name="created" value="YWxwYXI7QUxQLVBDOzIwMjMtMDMtMDE7MTA6NTA6NDIgw5ZTOzIzNDg="/>
+        <attribute name="edited" value="YWxwYXI7QUxQLVBDOzIwMjMtMDMtMDE7MTE6MzI6NTQgw5ZTOzY7MjQ2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, sayi3" type="Real" array="False" size=""/>
+            <output expression="&quot;Birinci say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;&#304;kinci say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <output expression="&quot;&#220;&#231;&#252;nc&#252; say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi3"/>
+            <if expression="sayi1&gt;sayi2 &amp;&amp; sayi1&gt;sayi3">
+                <then>
+                    <output expression="sayi1 &amp; &quot;en b&#252;y&#252;k say&#305;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sayi2&gt;sayi3">
+                        <then>
+                            <output expression="sayi2 &amp; &quot; en b&#252;y&#252;k say&#305;d&#305;r.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="sayi3 &amp; &quot; en b&#252;y&#252;k say&#305;d&#305;r.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

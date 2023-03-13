@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alpar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-02 01:40:17 &#214;S"/>
+        <attribute name="created" value="YWxwYXI7QUxQLVBDOzIwMjMtMDMtMDI7MDE6Mjc6MjMgw5ZTOzIzNTI="/>
+        <attribute name="edited" value="YWxwYXI7QUxQLVBDOzIwMjMtMDMtMDI7MDE6NDA6MTcgw5ZTOzE7MjQ1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="not1, not2, not3, ort" type="Real" array="False" size=""/>
+            <output expression="&quot;Birinci notu giriniz.&quot;" newline="True"/>
+            <input variable="not1"/>
+            <output expression="&quot;&#304;kinci notu giriniz.&quot;" newline="True"/>
+            <input variable="not2"/>
+            <output expression="&quot;&#220;&#231;&#252;nc&#252; notu giriniz.&quot;" newline="True"/>
+            <input variable="not3"/>
+            <assign variable="ort" expression="(not1 + not2 + not3)/3"/>
+            <if expression="ort&gt;45">
+                <then>
+                    <if expression="ort&gt;70">
+                        <then>
+                            <output expression="&quot;Pekiyi ile ge&#231;tiniz.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#304;yi ile ge&#231;tiniz.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Zay&#305;f, kald&#305;n&#305;z.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
